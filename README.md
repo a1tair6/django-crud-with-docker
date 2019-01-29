@@ -6,7 +6,7 @@ To run this application without having to install all dependencies, use Docker a
 - If you don't have [Docker](https://docs.docker.com/install/) and [Docker Compose](https://docs.docker.com/compose/install/), install them by clicking on their respective link.
 - Next, clone or download this project. If you choose to clone, type:
 ``` bash
-$ git clone https://github.com/fsenaweb/docker-laravel.git
+$ git clone https://github.com/isacmoura/django-crud-with-docker.git
 ```
 - Enter on the project folder:
 ```bash
