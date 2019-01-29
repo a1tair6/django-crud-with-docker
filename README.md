@@ -24,11 +24,11 @@ This command will build the containers. Then will install pip (if you don't have
 You can use your application at the `0.0.0.0:8000` adress, but, if you want, you can make some changes.
 To do this, follow the instructions:
 - Create the module:
-`docker exec -it {CONTAINER_ID} python3 manage.py startapp app`. **change "app" to a name of your preference and CONTAINER_ID for the container_id in `docker ps`**
+`docker-compose run web ./manage.py startapp app`. **change "app" to a name of your preference**
 - Run migrations:
-`docker exec -it {CONTAINER_ID} python3 python3 manage.py migrate`
+`docker-compose run web ./manage.py migrate`
 - Create a superuser for Django Admin area:
-`docker exec -it {CONTAINER_ID} python3 manage.py createsuperuser`
+`docker-compose run web ./manage.py createsuperuser`
 
 #### Contributions
 Feel free to contribute with this project, send a Pull Request or open a issue.
